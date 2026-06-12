@@ -4,7 +4,7 @@
 
 mensaje_bienvenida:str="""
 =====================================
-= BIENVENIDO A MI CALCULADORA =
+= BIENVENIDOS A MI CALCULADORA =
 =====================================
 """
 print(mensaje_bienvenida)
