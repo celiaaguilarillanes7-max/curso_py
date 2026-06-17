@@ -39,5 +39,41 @@ alumno["nombre"] # maria
   # la diferencia de este m3etodo es que no permite  manejar errores
   print(persona.git("telefono")) # none
     print(persona.git("telefono"."no disponible")) # si la clave telefono no exixte no mostrara None si no el segundo parametro que le pasemos al metodo git,
+  ```
+  ## MODIFICAR ELEMENTO✔️
+  **cambiar un valor existente**
+  ```python
+   persona:dict={
+    "nombre":"celia",
+    "edad":16,
+  }
+  persona["edad"]=19
+  # agregar una nueva clave:valor
+  persona["carrera"]="agro"
+  # si la clave no existe se crea automaticamente. si existe se actualiza.
+  ```
+  ## 📈AGREGAR/ACTUALIZARCMULTIPLES ELEMENTOS
+  para esto tenemos que hacer uso de el metodo `.update` 
+  se puede agregar si los pares de `clave:valor`no existe y actualizar si el `clave:valor` existe.
+  ```  python
+  tienda:dict[str:str|int]={
+    "razon social":"bigote",
+    "ruc":20464952526
+  }
+  # puedo actualizar usando el metodo .update tengo dos maneras de usar este metodo
+  # 1. diccionarios
+  tienda.update({"ruc":2469756315,"telefono":964587235})
+  # 2. pares clave=valor
+  tienda.update(h_atencion="9-12",gerente="kevin")
+  ```
 
+  ## 🚮ELIMINAR ELEMENTO❌
+  ```python
+   tienda:dict[str:str|int]={
+    "razon social":"bigote",
+    "ruc":20464952526
+  }
+  el_eliminado=tienda.pop("ruc")
+  # para elimonar todo el diccionario
+  tienda.clear()
   ```
