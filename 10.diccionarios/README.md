@@ -77,3 +77,16 @@ alumno["nombre"] # maria
   # para elimonar todo el diccionario
   tienda.clear()
   ```
+  ## recorre un diccionadio (tarea)
+  estudiante = {
+    "nombre": "Ana",
+    "edad": 20,
+    "carrera": "Ingeniería"
+}
+
+for clave, valor in estudiante.items():
+    print(clave, ":", valor)
+
+    nombre : Ana
+edad : 20
+carrera : Ingeniería
